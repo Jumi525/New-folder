@@ -1,8 +1,8 @@
 [build]
-  publish = "dist"            # Folder to deploy
+  publish = "src"            # Folder to deploy
   command = "npm run build"   # Command to build the site
 
 [[redirects]]
-  from = "/src/*"
-  to = "/src/home.html"
+  from = "/*"
+  to = "/index.html"
   status = 200
