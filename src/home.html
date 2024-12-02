@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="We believe in delivering quality meals that bring joy to every bite."
+    />
+    <meta
+      name="keywords"
+      content="HTML, Tailwind CSS, JavaScript, tutorials, examples"
+    />
+    <meta name="author" content="Ahmed Najmudeen" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Meta Tags (for Social Media Sharing) -->
+    <meta property="og:title" content="FoodHaven" />
+    <meta
+      property="og:description"
+      content="We believe in delivering quality meals that bring joy to every bite."
+    />
+    <meta property="og:image" content="https://example.com/your-image.jpg" />
+    <meta property="og:url" content="https://example.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="FoodHaven-Your next food bustop" />
+    <meta name="twitter:title" content="FoodHaven" />
+    <meta
+      name="twitter:description"
+      content="we believe in delivering quality meals that bring joy to every bite."
+    />
+    <meta name="twitter:image" content="https://example.com/your-image.jpg" />
+
+    <!-- Favicons -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+    <!-- Page Title -->
+    <title>Food Haven</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <!-- Navigation Bar -->
+    <header class="bg-white shadow-md">
+      <div
+        class="container mx-auto flex items-center justify-between px-6 py-4"
+      >
+        <a href="#" class="text-2xl font-bold text-gray-800"
+          >Food<span class="text-blue-500">Haven</span></a
+        >
+        <nav
+          class="navbar fixed top-0 left-0 h-full w-56 -translate-x-full bg-gray-900 transition-transform transform z-40 md:static md:flex-grow md:z-0 md:translate-x-0 md:bg-transparent text-green-400 md:ml-5 md:min-w-max"
+        >
+          <button
+            class="close-btn p-1 rounded-full hover:bg-gray-600 text-blue-400 max-w-max grid place-content-center ml-auto m-3 md:hidden"
+          >
+            <ion-icon name="close-circle-outline" class="size-7"></ion-icon>
+          </button>
+          <ul
+            class="flex flex-col mx-2 mb-9 md:mx-0 md:mb-0 text-gray-300 md:text-black md:flex-row"
+          >
+            <div
+              class="md:min-w-[400px] md:max-w-[500px] md:flex md:items-center md:justify-around md:mx-auto"
+            >
+              <li
+                class="py-3 border-t-[2px] border-solid border-white/50 hover:bg-blue-600 md:hover:text-blue-600 md:hover:bg-transparent pl-2 md:py-0 md:border-none md:pl-0"
+              >
+                <a href="#home">Home</a>
+              </li>
+              <li
+                class="py-3 border-t-[2px] border-solid border-white/50 hover:bg-blue-600 md:hover:text-blue-600 md:hover:bg-transparent pl-2 md:py-0 md:border-none md:pl-0"
+              >
+                <a href="#about">About</a>
+              </li>
+              <li
+                class="border-t-[2px] py-3 border-solid border-white/50 hover:bg-blue-600 md:hover:text-blue-600 md:hover:bg-transparent pl-2 md:py-0 md:border-none md:pl-0"
+              >
+                <a href="#contact">Contact</a>
+              </li>
+              <li
+                class="border-t-[2px] py-3 border-solid border-white/50 hover:bg-blue-600 md:hover:text-blue-600 md:hover:bg-transparent pl-2 md:py-0 md:border-none md:pl-0"
+              >
+                <a href="product.html">Product</a>
+              </li>
+              <li
+                class="border-t-[2px] py-3 border-solid border-white/50 hover:bg-blue-600 md:hover:text-blue-600 md:hover:bg-transparent pl-2 md:py-0 md:border-none md:pl-0"
+              >
+                <a href="profile.html">Profile</a>
+              </li>
+            </div>
+            <div class="md:flex md:gap-2 md:items-center md:ml-3">
+              <li
+                class="border-t-[2px] py-3 border-solid border-white/50 hover:bg-blue-600 md:hover:bg-none pl-2 md:border-none md:py-1 px-3 md:bg-blue-500 md:rounded-lg"
+              >
+                <a href="login.html">Login</a>
+              </li>
+              <li
+                class="border-t-[2px] py-3 border-b-[2px] border-solid border-white/50 hover:bg-blue-600 md:hover:bg-none pl-2 md:border-none md:py-1 px-3 md:bg-blue-500 md:rounded-lg"
+              >
+                <a href="signup.html">Signup</a>
+              </li>
+            </div>
+          </ul>
+        </nav>
+        <button
+          class="menu-toggle md:hidden text-gray-600 hover:text-blue-500 focus:outline-none"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="bg-cover bg-center h-screen flex items-center justify-center"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1478145046317-39f10e56b5e9?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      "
+    >
+      <div class="text-center text-white px-6">
+        <h1 class="text-5xl font-bold">Delicious Food Delivered to You</h1>
+        <p class="mt-4 text-lg">
+          Experience the best dining with FoodHaven. Order your favorite meals
+          now!
+        </p>
+        <button
+          class="mt-6 px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-lg shadow-md"
+        >
+          Order Now
+        </button>
+      </div>
+    </section>
+
+    <!-- Featured Dishes Section -->
+    <section id="menu" class="py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-gray-800 text-center">
+          Our Featured Dishes
+        </h2>
+        <p class="text-gray-600 text-center mt-2">
+          Taste the best dishes crafted with love and fresh ingredients.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+          <!-- Dish 1 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1694547926001-f2151e4a476b?q=80&w=1422&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Pizza"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800">Classic Pizza</h3>
+              <p class="text-gray-600 mt-2">
+                Crispy crust with fresh tomato sauce and mozzarella cheese.
+              </p>
+              <button
+                class="mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-md"
+              >
+                Order Now
+              </button>
+            </div>
+          </div>
+          <!-- Dish 2 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1695937261943-1820ae270e87?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Burger"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800">
+                Gourmet Burger
+              </h3>
+              <p class="text-gray-600 mt-2">
+                Juicy patty with fresh veggies and special sauce.
+              </p>
+              <button
+                class="mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-md"
+              >
+                Order Now
+              </button>
+            </div>
+          </div>
+          <!-- Dish 3 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1694707235503-dedaf712f35e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Salad"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800">Fresh Salad</h3>
+              <p class="text-gray-600 mt-2">
+                A mix of fresh greens with a zesty dressing.
+              </p>
+              <button
+                class="mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-md"
+              >
+                Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-gray-800">About Us</h2>
+        <p class="text-gray-600 mt-4">
+          At FoodHaven, we believe in delivering quality meals that bring joy to
+          every bite. Whether you're dining in or ordering online, we prioritize
+          taste and service.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-800 text-white py-6">
+      <div class="container mx-auto px-6 text-center">
+        <p>&copy; 2024 FoodHaven. All rights reserved.</p>
+        <div class="mt-4 flex justify-center space-x-4">
+          <a href="#" class="hover:text-blue-500">Facebook</a>
+          <a href="#" class="hover:text-blue-500">Twitter</a>
+          <a href="#" class="hover:text-blue-500">Instagram</a>
+        </div>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./home.js"></script>
+  </body>
+</html>
+
+<!-- npx tailwindcss -i ./src/style.css -o ./src/output.css --watch -->
+<!-- "main": "index.js", -->

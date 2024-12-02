@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100 h-screen flex items-center justify-center">
+    <!-- Toast Container -->
+    <div
+      id="toast-container"
+      class="fixed bottom-5 right-5 space-y-3 z-50"
+    ></div>
+    <div class="bg-white shadow-lg rounded-lg p-8 max-w-md w-full">
+      <div id="form-header" class="text-center mb-6">
+        <h1 class="text-2xl font-bold text-gray-800" id="form-title">Login</h1>
+        <p class="text-gray-500" id="form-subtitle">
+          Welcome back! Please enter your details.
+        </p>
+      </div>
+
+      <!-- Login Form -->
+      <form
+        id="login-form"
+        class="space-y-4"
+        onsubmit="handleLoginSubmit(event)"
+      >
+        <div>
+          <label
+            for="login-email"
+            class="block text-sm font-medium text-gray-700"
+            >Email</label
+          >
+          <input
+            type="email"
+            id="email"
+            class="w-full border-gray-300 rounded-md shadow-sm outline-blue-500 py-1 pl-2"
+            required
+          />
+        </div>
+        <div>
+          <label
+            for="login-password"
+            class="block text-sm font-medium text-gray-700"
+            >Password</label
+          >
+          <input
+            type="password"
+            id="password"
+            class="w-full border-gray-300 rounded-md shadow-sm outline-blue-500 py-1 pl-2"
+            required
+          />
+        </div>
+        <button
+          type="submit"
+          class="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600"
+        >
+          Login
+        </button>
+      </form>
+      <div class="text-center mt-6">
+        <p class="text-sm text-gray-500">
+          Don’t have an account?
+          <a
+            href="signup.html"
+            class="text-blue-500 font-medium hover:underline"
+            >Sign Up</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <script src="auth.js"></script>
+  </body>
+</html>
