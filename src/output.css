@@ -767,6 +767,10 @@ video {
   height: 100vh;
 }
 
+.h-\[calc\(100vh-60px\)\] {
+  height: calc(100vh - 60px);
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -989,11 +993,6 @@ video {
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
-}
-
-.bg-gray-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity, 1));
 }
 
 .bg-gray-50 {

@@ -9,6 +9,7 @@ let cart = [];
 let prod = [];
 let counts = [];
 let numss = 0;
+quantity = 0;
 
 // Close Cart Modal
 closeBtn.addEventListener("click", () => {
@@ -59,7 +60,7 @@ function updateCart() {
             <p>${item.name.split(" ")[1]}</p>
             <div class="flex items-center justify-between w-16">
               <div
-                class="inc text-black h-6 w-6 bg-green-400 rounded-full grid place-content-center"
+                class=" text-black h-6 w-6 bg-green-400 rounded-full grid place-content-center"
               >
                 <ion-icon name="add-outline" class=" size-7"></ion-icon>
               </div>
@@ -98,6 +99,16 @@ document.querySelectorAll(".add-to-cart").forEach((button, index) => {
     // console.log(cart[index]?.id, "index", index + 1);
   });
 });
+
+// document.addEventListener("click", (event) => {
+//   if (event.target.name === "add-outline") {
+//     console.log("plus");
+//     addToCart(productName, productPrice, image, index + 1, quantity++);
+//   }
+//   if (event.target.name === "remove-outline") {
+//     console.log("minus");
+//   }
+// });
 
 // Filter products by category
 function filterProducts(category) {
